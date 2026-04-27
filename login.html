@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <!--meta info-->
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!--stylesheet include-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/login.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/rtl-style.css">
+</head>
+
+<body>
+    <div id="login-wrapper">
+        <header class="header-container">
+            <div class="lang-selector">
+                <img src="./images/country.png" alt="country">
+                <p class="m-0">Arabic <span>(KW)</span></p>
+                <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.707031 0.707153L4.97833 4.97846L9.24964 0.707153" stroke="white" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="logo-box">
+                <img src="./images/ticket.png" alt="KW.GAMES Logo" class="logo-img">
+            </div>
+        </header>
+
+        <!-- login form start -->
+        <div class="login-container">
+            <div class="login-form">
+                <img src="./images/ball.png" class="ball-image" alt="ball">
+                <div class="glass-card p-4 text-center text-white">
+                    <div class="login-heading">
+                        <h2 class="login-title">إنشاء حساب جديد</h2>
+                        <p class="login-subtitle">
+                            أدخل الاسم الكامل والبريد الإلكتروني وكلمة المرور لإنشاء حسابك.
+                        </p>
+                    </div>
+                    <div class="login-fields">
+                        <div class="form-group">
+                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.999 4.5C11.999 5.49456 11.6039 6.44839 10.9007 7.15165C10.1974 7.85491 9.24356 8.25 8.249 8.25C7.25444 8.25 6.30061 7.85491 5.59735 7.15165C4.89409 6.44839 4.499 5.49456 4.499 4.5C4.499 3.50544 4.89409 2.55161 5.59735 1.84835C6.30061 1.14509 7.25444 0.75 8.249 0.75C9.24356 0.75 10.1974 1.14509 10.9007 1.84835C11.6039 2.55161 11.999 3.50544 11.999 4.5ZM0.75 18.618C0.782135 16.6504 1.58634 14.7742 2.98918 13.394C4.39202 12.0139 6.28109 11.2405 8.249 11.2405C10.2169 11.2405 12.106 12.0139 13.5088 13.394C14.9117 14.7742 15.7159 16.6504 15.748 18.618C13.3954 19.6968 10.8371 20.2535 8.249 20.25C5.573 20.25 3.033 19.666 0.75 18.618Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <label for="">الاسم الكامل</label>
+                            <input type="text" placeholder="الاسم الكامل">
+                        </div>
+                        <div class="form-group">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.796 5.973C1.86046 7.07718 1.16382 8.3632 0.75 9.75C2.042 14.088 6.06 17.25 10.816 17.25C11.809 17.25 12.769 17.112 13.679 16.855M5.044 3.978C6.75665 2.84786 8.76408 2.24688 10.816 2.25C15.572 2.25 19.589 5.412 20.881 9.748C20.173 12.1173 18.653 14.1616 16.588 15.522M5.044 3.978L1.816 0.75M5.044 3.978L8.694 7.628M16.588 15.522L19.816 18.75M16.588 15.522L12.938 11.872C13.2166 11.5934 13.4376 11.2627 13.5884 10.8986C13.7392 10.5346 13.8168 10.1445 13.8168 9.7505C13.8168 9.3565 13.7392 8.96636 13.5884 8.60235C13.4376 8.23834 13.2166 7.9076 12.938 7.629C12.6594 7.3504 12.3287 7.1294 11.9646 6.97863C11.6006 6.82785 11.2105 6.75025 10.8165 6.75025C10.4225 6.75025 10.0324 6.82785 9.66835 6.97863C9.30434 7.1294 8.9736 7.3504 8.695 7.629M12.937 11.871L8.696 7.63"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <label for="">كلمة المرور</label>
+                            <input type="password" placeholder="كلمة المرور">
+                        </div>
+                        <button class="login-btn">إرسال</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login form end -->
+
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37_178)">
+                                <path
+                                    d="M15.7041 3.99927C17.4523 3.93563 18.9233 5.2946 19 7.04028V12.9583C18.9241 14.7048 17.4529 16.0649 15.7041 16.0012L15.668 16.0002H4.33203L4.2959 16.0012C2.54746 16.0649 1.07634 14.7053 1 12.9592V7.04028C1.07672 5.29462 2.54771 3.93563 4.2959 3.99927C4.30793 3.9997 4.31999 4.00024 4.33203 4.00024H15.668C15.68 4.00024 15.6921 3.9997 15.7041 3.99927Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.6063 7.74218L12.1351 9.46054C12.2989 9.55622 12.3997 9.73166 12.3997 9.92134C12.3997 10.1111 12.2989 10.2865 12.1351 10.3821L9.6063 12.2621C9.1263 12.5877 8.3999 12.3101 8.3999 11.8013V8.20138C8.3999 7.69498 9.1271 7.41658 9.6063 7.74218Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_178">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37_182)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.86966 0.122729C4.24177 0.196179 2.83081 0.594176 1.69149 1.72869C0.548195 2.86916 0.155141 4.28571 0.0815084 5.89666C0.0357364 6.90213 -0.231914 14.4983 0.544216 16.4904C1.06761 17.8343 2.09844 18.8677 3.45468 19.3927C4.08752 19.6389 4.80994 19.8055 5.86966 19.8542C14.7305 20.2552 18.0151 20.0369 19.4002 16.4904C19.6459 15.8591 19.8151 15.1373 19.8619 14.0802C20.2669 5.19671 19.7962 3.27115 18.2519 1.72869C17.027 0.506826 15.5862 -0.324921 5.86966 0.122729ZM5.95123 18.0676C4.98107 18.0239 4.4547 17.8622 4.10345 17.7262C3.21986 17.3828 2.55617 16.7219 2.21487 15.8434C1.62382 14.3298 1.81985 7.14052 1.87259 5.97722C1.92433 4.83774 2.15517 3.79634 2.95916 2.99236C3.9542 1.99978 5.23978 1.51332 13.9931 1.90837C15.1354 1.95998 16.1792 2.19036 16.9852 2.99236C17.9803 3.98493 18.4738 5.2804 18.0718 14.0002C18.028 14.9679 17.8658 15.4931 17.7295 15.8434C16.829 18.1512 14.7573 18.4715 5.95123 18.0676ZM14.0897 4.68962C14.0897 5.34671 14.624 5.88103 15.2837 5.88103C15.9434 5.88103 16.4788 5.34671 16.4788 4.68962C16.4788 4.03254 15.9434 3.49871 15.2837 3.49871C14.624 3.49871 14.0897 4.03254 14.0897 4.68962ZM4.86267 9.98796C4.86267 12.8029 7.15027 15.0851 9.97219 15.0851C12.7941 15.0851 15.0817 12.8029 15.0817 9.98796C15.0817 7.17302 12.7941 4.89226 9.97219 4.89226C7.15027 4.89226 4.86267 7.17302 4.86267 9.98796ZM6.65573 9.98796C6.65573 8.16163 8.14033 6.67986 9.97219 6.67986C11.8041 6.67986 13.2887 8.16163 13.2887 9.98796C13.2887 11.8153 11.8041 13.2975 9.97219 13.2975C8.14033 13.2975 6.65573 11.8153 6.65573 9.98796Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_182">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37_188)">
+                                <path
+                                    d="M20 12.1621V19.5561H15.714V12.6561C15.714 10.9241 15.094 9.74209 13.542 9.74209C12.358 9.74209 11.652 10.5381 11.342 11.3101C11.23 11.5861 11.2 11.9701 11.2 12.3541V19.5561H6.912C6.912 19.5561 6.97 7.87209 6.912 6.66209H11.2V8.48809L11.172 8.53009H11.2V8.48809C11.77 7.60809 12.786 6.35809 15.064 6.35809C17.884 6.35809 20 8.20209 20 12.1621ZM2.426 0.444092C0.96 0.444092 0 1.40809 0 2.67209C0 3.91209 0.932 4.90209 2.37 4.90209H2.398C3.894 4.90209 4.824 3.91009 4.824 2.67209C4.796 1.40809 3.894 0.444092 2.426 0.444092ZM0.254 19.5561H4.542V6.66209H0.254V19.5561Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_188">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37_192)">
+                                <path
+                                    d="M15.75 0.960938H18.8183L12.1167 8.61844L20 19.0401H13.8292L8.9925 12.7209L3.46417 19.0401H0.390833L7.5575 10.8476L0 0.960938H6.3275L10.695 6.73677L15.75 0.960938ZM14.6725 17.2059H16.3717L5.40167 2.69927H3.57667L14.6725 17.2059Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_192">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_37_195)">
+                                <path
+                                    d="M20 10.0608C20 15.0516 16.3383 19.1891 11.5583 19.94V12.9708H13.8825L14.325 10.0875H11.5583V8.21662C11.5583 7.42746 11.945 6.65912 13.1833 6.65912H14.4408V4.20412C14.4408 4.20412 13.2992 4.00912 12.2083 4.00912C9.93 4.00912 8.44167 5.38996 8.44167 7.88912V10.0866H5.90917V12.97H8.44167V19.9391C3.6625 19.1875 0 15.0508 0 10.0608C0 4.53829 4.4775 0.060791 10 0.060791C15.5225 0.060791 20 4.53746 20 10.0608Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_195">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-info">
+                    <span>للاستفسارات عبر واتساب التفاعلي</span>
+                    <div class="whatsapp">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.005 2.90667C15.1333 1.03333 12.645 0.000833333 9.99417 0C4.53167 0 0.0858333 4.445 0.0833333 9.91C0.0825 11.6567 0.539167 13.3617 1.40667 14.865L0 20L5.25333 18.6217C6.70083 19.4117 8.33083 19.8275 9.98917 19.8283H9.99333C15.455 19.8283 19.9017 15.3825 19.9042 9.9175C19.9058 7.27 18.8758 4.77917 17.005 2.90667ZM9.99417 18.1542H9.99083C8.5125 18.1542 7.06333 17.7567 5.79833 17.0058L5.4975 16.8275L2.38 17.645L3.2125 14.605L3.01667 14.2933C2.19167 12.9817 1.75667 11.4658 1.7575 9.91C1.75917 5.36833 5.455 1.67333 9.99833 1.67333C12.1983 1.67333 14.2667 2.53167 15.8217 4.08833C17.3767 5.64583 18.2325 7.715 18.2317 9.91583C18.2292 14.4592 14.5342 18.1542 9.99417 18.1542ZM14.5125 11.985C14.265 11.8608 13.0475 11.2617 12.82 11.1792C12.5933 11.0967 12.4283 11.055 12.2625 11.3025C12.0967 11.55 11.6233 12.1083 11.4783 12.2742C11.3342 12.4392 11.1892 12.46 10.9417 12.3358C10.6942 12.2117 9.89583 11.9508 8.95 11.1067C8.21417 10.45 7.71667 9.63917 7.5725 9.39083C7.42833 9.1425 7.5575 9.00917 7.68083 8.88583C7.7925 8.775 7.92833 8.59667 8.0525 8.45167C8.1775 8.30833 8.21833 8.205 8.30167 8.03917C8.38417 7.87417 8.34333 7.72917 8.28083 7.605C8.21833 7.48167 7.72333 6.2625 7.5175 5.76667C7.31667 5.28333 7.1125 5.34917 6.96 5.34167C6.81583 5.33417 6.65083 5.33333 6.485 5.33333C6.32 5.33333 6.05167 5.395 5.825 5.64333C5.59833 5.89167 4.95833 6.49083 4.95833 7.70917C4.95833 8.92833 5.84583 10.1058 5.96917 10.2708C6.0925 10.4358 7.715 12.9375 10.1992 14.01C10.79 14.265 11.2517 14.4175 11.6108 14.5317C12.2042 14.72 12.7442 14.6933 13.1708 14.63C13.6467 14.5592 14.6358 14.0308 14.8425 13.4525C15.0492 12.8742 15.0492 12.3775 14.9867 12.275C14.925 12.1708 14.76 12.1092 14.5125 11.985Z"
+                                fill="#FF8000" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="copy-rights">حقوق النشر (c) 2025 KW.GAMES. جميع الحقوق محفوظة.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<!--font include-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
