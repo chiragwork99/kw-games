@@ -1,0 +1,52 @@
+@font-face {
+   font-family: 'Neo Sans Arabic';
+    src: url('../fonts/NeoSansArabic/NeoSansArabic.eot');
+    src: url('../fonts/NeoSansArabic/NeoSansArabic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic.woff2') format('woff2'),
+        url('../fonts/NeoSansArabic/NeoSansArabic.woff') format('woff'),
+        url('../fonts/NeoSansArabic/NeoSansArabic.ttf') format('truetype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic.svg#NeoSansArabic') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neo Sans Arabic';
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Bold.eot');
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Bold.woff2') format('woff2'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Bold.woff') format('woff'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Bold.ttf') format('truetype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Bold.svg#NeoSansArabic-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neo Sans Arabic';
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Black.eot');
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Black.woff2') format('woff2'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Black.woff') format('woff'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Black.ttf') format('truetype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Black.svg#NeoSansArabic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neo Sans Arabic';
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Medium.eot');
+    src: url('../fonts/NeoSansArabic/NeoSansArabic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Medium.woff2') format('woff2'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Medium.woff') format('woff'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Medium.ttf') format('truetype'),
+        url('../fonts/NeoSansArabic/NeoSansArabic-Medium.svg#NeoSansArabic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

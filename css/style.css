@@ -1,7 +1,7 @@
 /* Reset ================================================================================= */
 
 *{margin:0;padding:0}
-body{ font-family: 'Noto Sans', sans-serif; font-weight:400; font-size:15px; color:#505050; background:url(../images/bg.jpg) repeat center center;}
+body{ font-family: 'Neo Sans Arabic'; sans-serif; font-weight:400; font-size:15px; color:#505050;}
 a {text-decoration:none;	background-color: transparent; color:inherit; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
 button, html input[type="button"], input[type="reset"], input[type="submit"] {-webkit-appearance: button;cursor: pointer; border:none; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}
 :focus{outline:none;}

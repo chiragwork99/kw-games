@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>	<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>	<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
 
 <head>
     <title></title>
@@ -15,13 +10,9 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/ico" href="images/favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
     <!--stylesheet include-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/font.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
@@ -32,12 +23,29 @@
 <body>
     <div id="login-wrapper">
         <header class="header-container">
-            <div class="lang-selector">
+            <!--  <div class="lang-selector">
                 <img src="./images/country.png" alt="country">
                 <p class="m-0">Arabic <span>(KW)</span></p>
                 <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.707031 0.707153L4.97833 4.97846L9.24964 0.707153" stroke="white" stroke-width="2" />
                 </svg>
+            </div> -->
+
+            <div class="dropdown lang-selector">
+                <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="langDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./images/ar.png" alt="country" width="20" class="mr-2">
+                    <span>Arabic <span>(KW)</span></span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="langDropdown">
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <img src="./images/ar.png" width="20" class="mr-2"> Arabic (KW)
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <img src="./images/en.png" width="20" class="mr-2"> English (US)
+                    </a> 
+                </div>
             </div>
             <div class="logo-box">
                 <img src="./images/ticket.png" alt="KW.GAMES Logo" class="logo-img">
@@ -48,7 +56,7 @@
         <div class="login-container">
             <div class="login-form">
                 <img src="./images/ball.png" class="ball-image" alt="ball">
-                <div class="glass-card p-4 text-center text-white">
+                <div class="glass-card text-center text-white">
                     <div class="login-heading">
                         <h2 class="login-title">إنشاء حساب جديد</h2>
                         <p class="login-subtitle">
@@ -162,14 +170,17 @@
                 </div>
 
                 <div class="footer-info">
-                    <span>للاستفسارات عبر واتساب التفاعلي</span>
-                    <div class="whatsapp">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.005 2.90667C15.1333 1.03333 12.645 0.000833333 9.99417 0C4.53167 0 0.0858333 4.445 0.0833333 9.91C0.0825 11.6567 0.539167 13.3617 1.40667 14.865L0 20L5.25333 18.6217C6.70083 19.4117 8.33083 19.8275 9.98917 19.8283H9.99333C15.455 19.8283 19.9017 15.3825 19.9042 9.9175C19.9058 7.27 18.8758 4.77917 17.005 2.90667ZM9.99417 18.1542H9.99083C8.5125 18.1542 7.06333 17.7567 5.79833 17.0058L5.4975 16.8275L2.38 17.645L3.2125 14.605L3.01667 14.2933C2.19167 12.9817 1.75667 11.4658 1.7575 9.91C1.75917 5.36833 5.455 1.67333 9.99833 1.67333C12.1983 1.67333 14.2667 2.53167 15.8217 4.08833C17.3767 5.64583 18.2325 7.715 18.2317 9.91583C18.2292 14.4592 14.5342 18.1542 9.99417 18.1542ZM14.5125 11.985C14.265 11.8608 13.0475 11.2617 12.82 11.1792C12.5933 11.0967 12.4283 11.055 12.2625 11.3025C12.0967 11.55 11.6233 12.1083 11.4783 12.2742C11.3342 12.4392 11.1892 12.46 10.9417 12.3358C10.6942 12.2117 9.89583 11.9508 8.95 11.1067C8.21417 10.45 7.71667 9.63917 7.5725 9.39083C7.42833 9.1425 7.5575 9.00917 7.68083 8.88583C7.7925 8.775 7.92833 8.59667 8.0525 8.45167C8.1775 8.30833 8.21833 8.205 8.30167 8.03917C8.38417 7.87417 8.34333 7.72917 8.28083 7.605C8.21833 7.48167 7.72333 6.2625 7.5175 5.76667C7.31667 5.28333 7.1125 5.34917 6.96 5.34167C6.81583 5.33417 6.65083 5.33333 6.485 5.33333C6.32 5.33333 6.05167 5.395 5.825 5.64333C5.59833 5.89167 4.95833 6.49083 4.95833 7.70917C4.95833 8.92833 5.84583 10.1058 5.96917 10.2708C6.0925 10.4358 7.715 12.9375 10.1992 14.01C10.79 14.265 11.2517 14.4175 11.6108 14.5317C12.2042 14.72 12.7442 14.6933 13.1708 14.63C13.6467 14.5592 14.6358 14.0308 14.8425 13.4525C15.0492 12.8742 15.0492 12.3775 14.9867 12.275C14.925 12.1708 14.76 12.1092 14.5125 11.985Z"
-                                fill="#FF8000" />
-                        </svg>
-                    </div>
+                    <a href="#" class="d-flex">
+                        <span>للاستفسارات عبر واتساب التفاعلي</span>
+                        <div class="whatsapp">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.005 2.90667C15.1333 1.03333 12.645 0.000833333 9.99417 0C4.53167 0 0.0858333 4.445 0.0833333 9.91C0.0825 11.6567 0.539167 13.3617 1.40667 14.865L0 20L5.25333 18.6217C6.70083 19.4117 8.33083 19.8275 9.98917 19.8283H9.99333C15.455 19.8283 19.9017 15.3825 19.9042 9.9175C19.9058 7.27 18.8758 4.77917 17.005 2.90667ZM9.99417 18.1542H9.99083C8.5125 18.1542 7.06333 17.7567 5.79833 17.0058L5.4975 16.8275L2.38 17.645L3.2125 14.605L3.01667 14.2933C2.19167 12.9817 1.75667 11.4658 1.7575 9.91C1.75917 5.36833 5.455 1.67333 9.99833 1.67333C12.1983 1.67333 14.2667 2.53167 15.8217 4.08833C17.3767 5.64583 18.2325 7.715 18.2317 9.91583C18.2292 14.4592 14.5342 18.1542 9.99417 18.1542ZM14.5125 11.985C14.265 11.8608 13.0475 11.2617 12.82 11.1792C12.5933 11.0967 12.4283 11.055 12.2625 11.3025C12.0967 11.55 11.6233 12.1083 11.4783 12.2742C11.3342 12.4392 11.1892 12.46 10.9417 12.3358C10.6942 12.2117 9.89583 11.9508 8.95 11.1067C8.21417 10.45 7.71667 9.63917 7.5725 9.39083C7.42833 9.1425 7.5575 9.00917 7.68083 8.88583C7.7925 8.775 7.92833 8.59667 8.0525 8.45167C8.1775 8.30833 8.21833 8.205 8.30167 8.03917C8.38417 7.87417 8.34333 7.72917 8.28083 7.605C8.21833 7.48167 7.72333 6.2625 7.5175 5.76667C7.31667 5.28333 7.1125 5.34917 6.96 5.34167C6.81583 5.33417 6.65083 5.33333 6.485 5.33333C6.32 5.33333 6.05167 5.395 5.825 5.64333C5.59833 5.89167 4.95833 6.49083 4.95833 7.70917C4.95833 8.92833 5.84583 10.1058 5.96917 10.2708C6.0925 10.4358 7.715 12.9375 10.1992 14.01C10.79 14.265 11.2517 14.4175 11.6108 14.5317C12.2042 14.72 12.7442 14.6933 13.1708 14.63C13.6467 14.5592 14.6358 14.0308 14.8425 13.4525C15.0492 12.8742 15.0492 12.3775 14.9867 12.275C14.925 12.1708 14.76 12.1092 14.5125 11.985Z"
+                                    fill="#FF8000" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
                 <span class="copy-rights">حقوق النشر (c) 2025 KW.GAMES. جميع الحقوق محفوظة.</span>
             </div>
@@ -180,6 +191,7 @@
 
 <!--font include-->
 <script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 
